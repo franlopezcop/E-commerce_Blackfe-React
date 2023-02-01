@@ -6,7 +6,7 @@ function LastProductInDb() {
 
   React.useEffect (()=>{
       //Consulta de productos
-      let lastProductUrl = "https://e-commerceblackfe-api-production.up.railway.app/api/products/last"
+      let lastProductUrl = "https://ecommerce-blackfe-api.onrender.com/api/products/last"
         fetch (lastProductUrl)
         .then(response => response.json())
         .then(data =>{
@@ -44,7 +44,7 @@ function LastProductInDb() {
               className="img-fluid px-3 px-sm-4 mt-3 mb-4"
               style={{ width: 40 + "rem" }}
               //src={lastProduct.image}
-              src={`https://e-commerceblackfe-api-production.up.railway.app/images/products/${lastProduct?.Images?.[0].path}`}
+              src={`https://ecommerce-blackfe-api.onrender.com/api/products/${lastProduct?.Images?.[0].path}`}
               alt="Last Product"
             />
             <p>{lastProduct.description}</p>

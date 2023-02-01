@@ -10,7 +10,7 @@ function ContentRowDb() {
 // Total Card Products
 const [products, setProducts] = React.useState([]);
 React.useEffect(() => {
-    let url = "https://e-commerceblackfe-api-production.up.railway.app/api/products";
+    let url = "https://ecommerce-blackfe-api.onrender.com/api/products";
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -34,7 +34,7 @@ let totalProducts = {
 // Total Card Users
 const [users, setUsers] = React.useState([]);
 React.useEffect(() => {
-    let url = "https://e-commerceblackfe-api-production.up.railway.app/api/users";
+    let url = "https://ecommerce-blackfe-api.onrender.com/api/users";
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -57,7 +57,7 @@ let totalUsers = {
 // Total Card Categories
 const [categories, setCategories] = React.useState([]);
 React.useEffect(() => {
-    let url = "https://e-commerceblackfe-api-production.up.railway.app/api/products";
+    let url = "https://ecommerce-blackfe-api.onrender.com/api/products";
     fetch(url)
     .then(response => response.json())
     .then(data => {

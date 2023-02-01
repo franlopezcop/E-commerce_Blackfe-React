@@ -9,9 +9,9 @@ function SearchMovies() {
   useEffect(() => {
     let url
     if (keyword === "Debe ingresar una palabra") {
-      url = 'https://e-commerceblackfe-api-production.up.railway.app/api/products';
+      url = 'https://ecommerce-blackfe-api.onrender.com/api/products';
     } else {
-      url = `https://e-commerceblackfe-api-production.up.railway.app/api/products?search=${keyword}`
+      url = `https://ecommerce-blackfe-api.onrender.com/api/products?search=${keyword}`
     }
     fetch(url)
       .then( response => response.json())

@@ -7,7 +7,7 @@ function Chart (){
 
     React.useEffect (()=>{
         // Consulta de productos
-        let url = "https://e-commerceblackfe-api-production.up.railway.app/api/products"
+        let url = "https://ecommerce-blackfe-api.onrender.com/api/products"
         fetch(url)
         .then(response => response.json())
         .then(data =>{
